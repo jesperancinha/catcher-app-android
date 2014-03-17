@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joai.aimanddestroy.AimAndDestroyActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:paddingTop="100dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/begginer"
+            android:id="@+id/btnBegginer"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bkgrnd_def"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intermediate"
+            android:id="@+id/btnIntermediate"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bkgrnd_def"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced"
+            android:id="@+id/btnAdvanced"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bkgrnd_def"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:id="@+id/btnExit"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bkgrnd_def"/>
+    </LinearLayout>
+    </FrameLayout>
