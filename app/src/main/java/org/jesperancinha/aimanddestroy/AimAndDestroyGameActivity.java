@@ -1,4 +1,4 @@
-package com.joai.aimanddestroy;
+package org.jesperancinha.aimanddestroy;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;

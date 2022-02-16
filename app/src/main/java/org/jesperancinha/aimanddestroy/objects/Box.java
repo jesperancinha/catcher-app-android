@@ -1,4 +1,4 @@
-package com.joai.aimanddestroy.objects;
+package org.jesperancinha.aimanddestroy.objects;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;

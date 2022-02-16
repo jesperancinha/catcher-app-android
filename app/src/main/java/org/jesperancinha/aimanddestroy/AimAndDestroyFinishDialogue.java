@@ -1,4 +1,4 @@
-package com.joai.aimanddestroy;
+package org.jesperancinha.aimanddestroy;
 
 import android.app.Activity;
 import android.content.Context;

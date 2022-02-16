@@ -1,4 +1,4 @@
-package com.joai.aimanddestroy;
+package org.jesperancinha.aimanddestroy;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -19,9 +19,9 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.joai.aimanddestroy.objects.Ball;
-import com.joai.aimanddestroy.objects.Box;
-import com.joai.aimanddestroy.objects.GameBall;
+import org.jesperancinha.aimanddestroy.objects.Ball;
+import org.jesperancinha.aimanddestroy.objects.Box;
+import org.jesperancinha.aimanddestroy.objects.GameBall;
 
 import java.util.ArrayList;
 import java.util.Date;

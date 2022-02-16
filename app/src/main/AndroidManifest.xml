@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.joai.aimanddestroy"
+    package="org.jesperancinha.aimanddestroy"
     android:versionCode="2"
     android:versionName="1.1">
 
@@ -12,7 +12,8 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name="com.joai.aimanddestroy.AimAndDestroyActivity"
+                android:exported="true"
+            android:name="org.jesperancinha.aimanddestroy.AimAndDestroyActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.joai.aimanddestroy.AimAndDestroyGameActivity"
+            android:name="org.jesperancinha.aimanddestroy.AimAndDestroyGameActivity"
             android:label="@string/title_activity_aim_and_destroy_game" >
         </activity>
     </application>

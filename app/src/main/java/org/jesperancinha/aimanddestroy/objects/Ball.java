@@ -1,4 +1,4 @@
-package com.joai.aimanddestroy.objects;
+package org.jesperancinha.aimanddestroy.objects;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -7,7 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
 
-import com.joai.aimanddestroy.R;
+import org.jesperancinha.aimanddestroy.R;
 
 public class Ball {
 
