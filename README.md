@@ -6,7 +6,10 @@
 [![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=catcher-app-android%20⏹&color=informational)](https://github.com/jesperancinha/catcher-app-android)
 
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
- 
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/600aad713fad4a9eb1b771c2ad93b754)](https://www.codacy.com/gh/jesperancinha/catcher-app-android/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/catcher-app-android&amp;utm_campaign=Badge_Grade)
+
+
 [![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/catcher-app-android.svg)](#)
 [![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/catcher-app-android.svg)](#)
 [![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/catcher-app-android.svg)](#)
