@@ -160,7 +160,7 @@ public class AimAndDestroyView extends View {
         }
         if (gameBalls.size() == 0) {
 
-           showPopup((Activity) getContext());
+            showPopup((Activity) getContext());
 
         }
         return true;
@@ -192,7 +192,7 @@ public class AimAndDestroyView extends View {
         popup.setBackgroundDrawable(new BitmapDrawable());
 
         // Displaying the popup at the specified location, + offsets.
-        popup.showAtLocation(mainView, Gravity.NO_GRAVITY,0 + OFFSET_X, 200 + OFFSET_Y);
+        popup.showAtLocation(mainView, Gravity.NO_GRAVITY, 0 + OFFSET_X, 200 + OFFSET_Y);
 
         long timeEnd = new Date().getTime();
 

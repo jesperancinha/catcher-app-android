@@ -17,27 +17,27 @@ public class Ball {
     float y = radius;
     public float speedX = 5;       // Ball's speed (x,y)
     public float speedY = 3;
-    private RectF bounds;   // Needed for Canvas.drawOval
-    private Paint paint;    // The paint style, color used for drawing
+    private final RectF bounds;   // Needed for Canvas.drawOval
+    private final Paint paint;    // The paint style, color used for drawing
     Bitmap bitmap = null;
 
     // Constructor
-    public Ball(int color, int xOffset, int yOffset, Bitmap image) {
+    public Ball(int color, int xOffset, int yOffset, Bitmap image, RectF rectF, Paint paint) {
         x += xOffset;
         y += yOffset;
-        bounds = new RectF();
-        paint = new Paint();
-        paint.setColor(color);
+        this.bounds = rectF;
+        this.paint = paint;
+        this.paint.setColor(color);
         this.bitmap = image;
         radius = image.getWidth() / 2;
     }
 
-    public Ball(int color, int xOffset, int yOffset, Bitmap image, int level) {
+    public Ball(int color, int xOffset, int yOffset, Bitmap image, int level, RectF rectF, Paint paint) {
         x += xOffset;
         y += yOffset;
-        bounds = new RectF();
-        paint = new Paint();
-        paint.setColor(color);
+        bounds = rectF;
+        this.paint = paint;
+        this.paint.setColor(color);
         this.bitmap = image;
         radius = image.getWidth() / 2;
         int speedFactor = 0;
@@ -123,8 +123,7 @@ public class Ball {
 
         }
 
-        Bitmap bitmap = BitmapFactory.decodeResource(res, testResource);
-        return bitmap;
+        return BitmapFactory.decodeResource(res, testResource);
     }
 
 

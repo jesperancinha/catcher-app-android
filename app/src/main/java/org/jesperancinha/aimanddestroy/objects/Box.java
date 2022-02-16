@@ -6,8 +6,8 @@ import android.graphics.Rect;
 
 public class Box {
     public int xMin, xMax, yMin, yMax;
-    private Paint paint;
-    private Rect bounds;
+    private final Paint paint;
+    private final Rect bounds;
 
     public Box(int color) {
         paint = new Paint();

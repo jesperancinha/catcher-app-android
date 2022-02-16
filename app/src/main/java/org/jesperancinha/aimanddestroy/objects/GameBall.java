@@ -1,6 +1,8 @@
 package org.jesperancinha.aimanddestroy.objects;
 
 import android.graphics.Bitmap;
+import android.graphics.Paint;
+import android.graphics.RectF;
 
 /**
  * Created by joao on 3/3/14.
@@ -32,12 +34,12 @@ public class GameBall {
 
     public GameBall(Box box, int ballColor, int xOffset, int yOffset, Bitmap image) {
         setBox(box);
-        setBall(new Ball(ballColor, xOffset, yOffset, image));
+        setBall(new Ball(ballColor, xOffset, yOffset, image, new RectF(), new Paint()));
     }
 
     public GameBall(Box box, int ballColor, Bitmap image, int level) {
         setBox(box);
-        setBall(new Ball(ballColor, 0, 0, image, level));
+        setBall(new Ball(ballColor, 0, 0, image, level, new RectF(), new Paint()));
     }
 
     public Box getBox() {

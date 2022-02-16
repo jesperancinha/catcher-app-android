@@ -1,42 +1,36 @@
 package org.jesperancinha.aimanddestroy;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 import android.widget.Button;
 
-public class AimAndDestroyActivity extends ActionBarActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AimAndDestroyActivity extends AppCompatActivity {
 
 
     Button btnBegginer = null;
     Button btnIntermediate = null;
     Button btnAdvanced = null;
     Button btnExit = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_aim_and_destroy);
 
-        btnBegginer = (Button)findViewById(R.id.btnBegginer);
+        btnBegginer = (Button) findViewById(R.id.btnBegginer);
         btnBegginer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startGame(1);
             }
         });
-        btnIntermediate = (Button)findViewById(R.id.btnIntermediate);
+        btnIntermediate = (Button) findViewById(R.id.btnIntermediate);
         btnIntermediate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +44,7 @@ public class AimAndDestroyActivity extends ActionBarActivity {
                 startGame(3);
             }
         });
-        btnExit = (Button)findViewById(R.id.btnExit);
+        btnExit = (Button) findViewById(R.id.btnExit);
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +56,7 @@ public class AimAndDestroyActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.aim_and_destroy, menu);
         return true;
@@ -80,16 +74,12 @@ public class AimAndDestroyActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void startGame(int level)
-    {
+    public void startGame(int level) {
         Intent i = new Intent(AimAndDestroyActivity.this, AimAndDestroyGameActivity.class);
         i.putExtra("LEVEL", level);
         finish();
         startActivity(i);
     }
-
-
-
 
 
 }
