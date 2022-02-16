@@ -9,6 +9,7 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/600aad713fad4a9eb1b771c2ad93b754)](https://www.codacy.com/gh/jesperancinha/catcher-app-android/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/catcher-app-android&amp;utm_campaign=Badge_Grade)
 
+[![Coverage Status](https://coveralls.io/repos/github/jesperancinha/catcher-app-android/badge.svg?branch=master)](https://coveralls.io/github/jesperancinha/catcher-app-android?branch=master)
 
 [![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/catcher-app-android.svg)](#)
 [![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/catcher-app-android.svg)](#)
