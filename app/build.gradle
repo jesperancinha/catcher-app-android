@@ -69,5 +69,5 @@ dependencies {
     androidTestImplementation 'org.mockito:mockito-android:4.8.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test:runner:1.5.0'
-    androidTestUtil 'androidx.test:orchestrator:1.4.1'
+    androidTestUtil 'androidx.test:orchestrator:1.4.2'
 }
