@@ -57,7 +57,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: tasks.withType(Test)) {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'org.jesperancinha.itf:itf-chartizate-api:5.0.1'
     implementation 'com.android.support:multidex:1.0.3'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
