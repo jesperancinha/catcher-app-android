@@ -1,7 +1,9 @@
 SHELL := /bin/bash
 GRADLE_VERSION ?= 8.5
 
-b: buildw
+b: build-local
+build-local:
+	gradle
 buildw:
 	./gradlew clean build test jacocoTestReport -i
 	gradle
