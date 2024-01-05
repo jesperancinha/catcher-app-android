@@ -9,10 +9,6 @@ buildscript {
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '8.0.0'
-}
-
 repositories {
     mavenLocal()
     mavenCentral()
@@ -39,12 +35,13 @@ android {
     }
 }
 
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     useJUnitPlatform()
     finalizedBy(jacocoTestReport)
 }
 
-task jacocoTestReport(type: JacocoReport, dependsOn: tasks.withType(Test)) {
+tasks.register('jacocoTestReport', JacocoReport) {
+    dependsOn tasks.withType(Test)
     reports {
         xml.required = true
         csv.required = false

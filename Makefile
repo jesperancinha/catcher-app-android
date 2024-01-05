@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-GRADLE_VERSION ?= 8.1.1
+GRADLE_VERSION ?= 8.5
 
 b: buildw
 buildw:
@@ -23,8 +23,8 @@ local-pipeline: dependencies lint b
 upgrade:
 	gradle wrapper --gradle-version $(GRADLE_VERSION)
 upgrade-gradle:
-	sudo apt upgrade
-	sudo apt update
+	sudo apt upgrade; \
+	sudo apt update; \
 	export SDKMAN_DIR="$(HOME)/.sdkman"; \
 	[[ -s "$(HOME)/.sdkman/bin/sdkman-init.sh" ]]; \
 	source "$(HOME)/.sdkman/bin/sdkman-init.sh"; \
@@ -40,6 +40,5 @@ upgrade-gradle:
 	fi; \
 	make upgrade
 install-linux:
-	sudo apt-get install jq
-	sudo apt-get install curl
+	sudo apt-get install jq curl
 	curl https://services.gradle.org/versions/current
