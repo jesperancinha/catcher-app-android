@@ -44,3 +44,9 @@ upgrade-gradle:
 install-linux:
 	sudo apt-get install jq curl
 	curl https://services.gradle.org/versions/current
+local-pipeline:
+	chmod +x gradlew
+	touch local.properties
+	make dependencies
+	make lint
+	make b
